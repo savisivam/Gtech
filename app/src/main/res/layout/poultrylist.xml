@@ -14,7 +14,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mobile_views">
+        android:id="@+id/prod_views">
         <ImageView
             android:id="@+id/pictures"
             android:layout_width="120dp"
@@ -57,11 +57,11 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:text=""
+                android:gravity="center"
                 android:textColor="@color/blue"
                 android:textSize="15sp"
-                android:layout_marginTop="-2dp"
 
-                />
+                android:layout_marginTop="-5dp"/>
             <ImageView
                 android:layout_toRightOf="@+id/gram_rate"
                 android:layout_width="20dp"
@@ -73,10 +73,11 @@
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
       <RelativeLayout
+          android:id="@+id/relative_layout"
           android:layout_toRightOf="@+id/pictures"
           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-    android:layout_below="@+id/gram_cardview">
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/gram_cardview">
         <TextView
             android:id="@+id/price_rate"
             android:layout_width="wrap_content"
@@ -98,10 +99,20 @@
             android:textSize="12sp"
             android:padding="5dp"
             android:gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="-10dp"
-            />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-10dp"  />
           </RelativeLayout>
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="2dp"
+            android:padding="5dp"
+            android:src="@drawable/plus_icon"
+            android:layout_alignBottom="@+id/relative_layout"
+            />
+
     </RelativeLayout>
-  </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
